@@ -1,12 +1,12 @@
 {
-  "name": "Nuestra casa",
-  "short_name": "Nuestra casa",
-  "description": "Tareas, compra y calendario compartidos",
-  "lang": "es",
+  "name": "A nosa casa",
+  "short_name": "A nosa casa",
+  "description": "Tarefas, compra, calendario e notas compartidas",
+  "lang": "gl",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f6f5f1",
-  "theme_color": "#f6f5f1",
+  "background_color": "#080d1b",
+  "theme_color": "#080d1b",
   "icons": [{ "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
 }

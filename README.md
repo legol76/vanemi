@@ -1,36 +1,37 @@
-# Nuestra casa
+# A nosa casa
 
-Web app familiar para compartir tareas, lista de la compra y calendario. Está hecha sin dependencias ni proceso de compilación y se puede publicar gratis con GitHub Pages.
+Aplicación web familiar para compartir tarefas, lista da compra, calendario e notas. Está feita sen dependencias nin proceso de compilación e pódese publicar de balde con GitHub Pages.
 
-## Publicar la web
+## Publicar a web
 
-1. Crea un repositorio **público** en GitHub para los archivos de esta web y sube el contenido de esta carpeta.
-2. En el repositorio, entra en **Settings → Pages**.
-3. En **Build and deployment**, elige **Deploy from a branch**, selecciona `main` y la carpeta `/(root)`. Guarda.
-4. GitHub mostrará la dirección de la web en esa página. Ábrela con el móvil y, si quieres, añádela a la pantalla de inicio.
+1. Crea un repositorio **público** en GitHub para os ficheiros desta web e carga o contido deste cartafol.
+2. No repositorio, entra en **Settings → Pages**.
+3. En **Build and deployment**, escolle **Deploy from a branch**, selecciona a rama `main` e o cartafol `/(root)`. Garda os cambios.
+4. GitHub amosará o enderezo da web nesa páxina. Ábrea no móbil e, se queres, engádea á pantalla de inicio.
 
-Para probarla en Windows antes de subirla, haz doble clic en `Abrir web.bat`. Se abrirá en `http://localhost:4173/`; deja abierta la ventana del servidor mientras la usas. No abras `index.html` directamente con doble clic, porque el navegador bloquea los módulos de JavaScript en archivos locales.
+Para probala en Windows antes de cargala, fai dobre clic en `Abrir web.bat`. Abrirase en `http://localhost:4173/`; deixa aberta a xanela do servidor mentres a uses. Non abras `index.html` directamente, porque o navegador bloquea os módulos de JavaScript nos ficheiros locais.
 
-El código de la web será público. **No guardes los datos familiares ni un token de GitHub en los archivos de este repositorio.**
+O código da web será público. **Non gardes os datos familiares nin ningún token de GitHub nos ficheiros deste repositorio.**
 
-## Compartir los datos de forma privada
+## Compartir os datos de forma privada
 
-La web guarda la información en un archivo JSON de un repositorio privado mediante la API de GitHub. Así, las citas médicas, cumpleaños, tareas y compras no quedan publicados junto al código.
+A web garda a información nun ficheiro JSON dun repositorio privado mediante a API de GitHub. Así, as citas médicas, os aniversarios, as tarefas e as compras non quedan publicados xunto co código.
 
-1. Crea un segundo repositorio en GitHub, esta vez **privado**, por ejemplo `datos-familia`. No hace falta subir archivos: la web creará `familia.json` al sincronizar por primera vez.
-2. Invita a tu mujer como colaboradora de ese repositorio privado desde **Settings → Collaborators** y acepta la invitación desde su cuenta.
-3. Cada uno crea su propio token en **GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens**. Limítalo al repositorio privado de datos y concede solo **Contents: Read and write**. No uses un token clásico ni permisos para otros repositorios.
-4. En la web, abre **Ajustes** e introduce el propietario (usuario de GitHub), el repositorio privado, la rama (normalmente `main`), la ruta (`familia.json`) y tu token. Pulsa **Guardar y sincronizar**.
-5. Tu mujer abre la misma web, pone el mismo propietario/repositorio/rama/ruta y su propio token. Los dos dispositivos compartirán el archivo.
+1. Crea un segundo repositorio en GitHub, desta vez **privado**, por exemplo `datos-familia`. Marca a opción de crear un README para que exista a rama `main`.
+2. Invita a túa muller como colaboradora dese repositorio privado desde **Settings → Collaborators**. Ela terá que aceptar a invitación.
+3. Cada persoa crea o seu propio token en **GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens**. Limítao ao repositorio privado dos datos e concede só o permiso **Contents: Read and write**. Non empregues un token clásico nin permisos para outros repositorios.
+4. Na web, abre **Axustes** e introduce o propietario (nome de usuario de GitHub), o repositorio privado, a rama (normalmente `main`), a ruta (`familia.json`) e o teu token. Preme **Gardar e sincronizar**.
+5. A túa muller abre a mesma web e configura eses mesmos datos co seu propio token. Os dous dispositivos compartirán o ficheiro.
 
-Los tokens se guardan en el almacenamiento local de cada navegador, no en el código ni en el repositorio. Cualquier persona que tenga acceso a un dispositivo desbloqueado podría usar el token de ese dispositivo; protégelo con el bloqueo del móvil y revócalo en GitHub si lo pierdes. La sincronización necesita conexión a internet. Si editáis exactamente el mismo elemento a la vez, prevalece la versión modificada más recientemente.
+Os tokens gárdanse no almacenamento local de cada navegador, non no código nin no repositorio. Calquera persoa con acceso a un dispositivo desbloqueado podería empregar o token dese dispositivo; protéxeo co bloqueo do móbil e revócao en GitHub se o perdes. A sincronización precisa conexión a internet. Se editades exactamente o mesmo elemento á vez, prevalecerá a versión modificada máis recentemente.
 
-## Qué incluye
+## Funcións
 
-- **Tareas:** pendientes, completadas, fecha límite, prioridad, notas y persona asignada.
-- **Compra:** añadir, marcar como comprado, editar cantidad/categoría y vaciar lo comprado.
-- **Calendario:** vistas de mes y semana; citas médicas, cumpleaños anuales y otros eventos; recordatorios del navegador mientras la app está abierta.
-- **Copia de seguridad:** exportar e importar los datos desde Ajustes.
-- **PWA:** instalable desde el navegador y con shell básico disponible sin conexión. La sincronización requiere conexión.
+- **Tarefas:** tarefas pendentes e feitas, data límite, prioridade, notas e persoa asignada.
+- **Compra:** engadir produtos, marcalos como mercado, editar cantidades e categorías e retirar os xa mercados.
+- **Calendario:** vistas mensual e semanal; citas médicas, cumpreanos anuais e outros eventos; selección de quen crea cada evento (Vane, Emilio, Dani ou Martina); avisos do navegador mentres a aplicación está aberta.
+- **Notas:** crear, editar e borrar notas compartidas con título e texto.
+- **Copias de seguridade:** exportar e importar os datos desde Axustes.
+- **PWA:** instalable desde o navegador e cunha versión básica dispoñible sen conexión. A sincronización precisa conexión.
 
-Los recordatorios del navegador no son alarmas garantizadas: el navegador debe tener permiso y la web debe estar abierta para comprobarlos. Actívalos desde Ajustes en cada dispositivo.
+Os avisos do navegador non son alarmas garantidas: o navegador debe ter permiso e a web debe estar aberta para comprobalo. Actívaos desde Axustes en cada dispositivo.

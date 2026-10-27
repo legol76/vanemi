@@ -2,7 +2,7 @@
 cd /d "%~dp0"
 where node >nul 2>nul
 if errorlevel 1 (
-  echo Hace falta instalar Node.js para abrir la web en local.
+  echo Cómpre instalar Node.js para abrir a web en local.
   pause
   exit /b 1
 )

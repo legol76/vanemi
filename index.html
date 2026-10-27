@@ -1,27 +1,28 @@
 <!doctype html>
-<html lang="es">
+<html lang="gl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#f6f5f1">
-  <meta name="description" content="Tareas, compra y calendario compartidos para casa.">
-  <title>Nuestra casa</title>
+  <meta name="theme-color" content="#080d1b">
+  <meta name="description" content="Tarefas, compra, calendario e notas compartidas para a casa.">
+  <title>A nosa casa</title>
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon.svg">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <div class="app-shell">
     <header class="topbar">
-      <div><p class="eyebrow">ORGANIZACIÓN EN FAMILIA</p><h1 id="page-title">Tareas</h1></div>
-      <span id="sync-status" class="sync-status" title="Estado de sincronización">Solo en este dispositivo</span>
+      <div><p class="eyebrow">ThIs iS vAnEmI</p><h1 id="page-title">Tarefas</h1></div>
     </header>
     <main id="app" tabindex="-1"></main>
-    <nav class="tabbar" aria-label="Secciones">
-      <button class="tab active" data-page="tasks"><span class="tab-icon">✓</span>Tareas</button>
+    <nav class="tabbar" aria-label="Seccións">
+      <button class="tab active" data-page="tasks"><span class="tab-icon">✓</span>Tarefas</button>
       <button class="tab" data-page="shopping"><span class="tab-icon">＋</span>Compra</button>
       <button class="tab" data-page="calendar"><span class="tab-icon">▦</span>Calendario</button>
-      <button class="tab" data-page="settings"><span class="tab-icon">⚙</span>Ajustes</button>
+      <button class="tab" data-page="notes"><span class="tab-icon">▤</span>Notas</button>
+      <button class="tab" data-page="settings"><span class="tab-icon">⚙</span>Axustes</button>
     </nav>
   </div>
   <div id="modal-root"></div>

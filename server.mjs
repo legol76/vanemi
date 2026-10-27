@@ -23,11 +23,11 @@ const server = createServer(async (req, res) => {
     res.end(content);
   } catch {
     res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-    res.end('No se encontró el archivo.');
+    res.end('Non se atopou o ficheiro.');
   }
 });
 
 server.listen(4173, '127.0.0.1', () => {
-  console.log('Nuestra casa disponible en http://localhost:4173/');
-  console.log('Deja esta ventana abierta mientras usas la app.');
+  console.log('A nosa casa está dispoñible en http://localhost:4173/');
+  console.log('Deixa esta xanela aberta mentres uses a aplicación.');
 });

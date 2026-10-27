@@ -1,1 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="120" fill="#56735a"/><path d="M105 247 256 118l151 129v153a22 22 0 0 1-22 22H127a22 22 0 0 1-22-22z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="28"/><path d="M206 422V293h100v129" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="25"/><path d="M256 213c-27-31-72 9 0 58 72-49 27-89 0-58z" fill="#f5c86a"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="54" y1="36" x2="458" y2="486" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171d43"/>
+      <stop offset=".55" stop-color="#111a31"/>
+      <stop offset="1" stop-color="#28164a"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="107" y1="132" x2="407" y2="279" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#42f5d0"/>
+      <stop offset=".52" stop-color="#58b8ff"/>
+      <stop offset="1" stop-color="#bd6bff"/>
+    </linearGradient>
+    <linearGradient id="heart" x1="220" y1="282" x2="304" y2="369" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff6bd6"/>
+      <stop offset="1" stop-color="#ff8967"/>
+    </linearGradient>
+    <linearGradient id="door" x1="233" y1="355" x2="288" y2="433" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7868ff"/>
+      <stop offset="1" stop-color="#bd6bff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(213 0 0 213 93 79)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#42f5d0" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#42f5d0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="118" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="118" fill="url(#glow)"/>
+  <rect x="13" y="13" width="486" height="486" rx="108" fill="none" stroke="#fff" stroke-opacity=".09" stroke-width="2"/>
+  <path d="M91 237 256 101l165 136" fill="none" stroke="url(#roof)" stroke-linecap="round" stroke-linejoin="round" stroke-width="25"/>
+  <path d="M132 221v183c0 15 12 27 27 27h194c15 0 27-12 27-27V221" fill="#17223b" stroke="url(#roof)" stroke-linejoin="round" stroke-width="21"/>
+  <path d="M224 431v-82c0-20 14-35 32-35s32 15 32 35v82" fill="url(#door)"/>
+  <circle cx="273" cy="389" r="4" fill="#fff" fill-opacity=".92"/>
+  <path d="M256 276c-13-17-39-7-39 14 0 25 39 49 39 49s39-24 39-49c0-21-26-31-39-14Z" fill="url(#heart)"/>
+  <path d="m213 204 12 12m74-12-12 12" stroke="#d8fff8" stroke-linecap="round" stroke-opacity=".82" stroke-width="8"/>
+  <circle cx="212" cy="199" r="7" fill="#ff71d8"/>
+  <circle cx="300" cy="199" r="7" fill="#ff71d8"/>
+</svg>
